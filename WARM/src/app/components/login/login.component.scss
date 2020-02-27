@@ -1,0 +1,34 @@
+.login-wrapper{
+
+    .login-logo-container{
+        padding-top: 140px;
+        padding-bottom: 80px;
+        .login-logo{
+            width: 150px;
+            height: 150px;
+            border-radius:75px;
+        }
+    }
+    
+    .application-name{
+        font-size: 36px;
+    }
+
+    .login-form{
+        padding-top: 80px;
+        display: flex;
+        flex-direction: inherit;
+        width: 350px;
+
+        .input-field-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-button{
+            padding: 10px 25px;
+            width: fit-content;
+            align-self: center;
+        }
+    }
+}

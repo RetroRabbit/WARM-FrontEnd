@@ -1,0 +1,48 @@
+.conversation-bar-wrapper{
+    background-color: rgba(239, 237, 237, 0.938);
+    height: 100%;
+
+    .search-bar-container{
+        padding: 60px 20px;
+        .search-input-field{
+            height: 50px;
+            padding-left: 5px;
+        }
+
+        .filter-toggle{
+            padding-left: 10px;
+        }
+    }
+
+    .conversations-container{
+        .conversation-selector{
+            padding: 10px;
+
+            .conversation-info{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                .client-name{
+
+                }
+    
+                .conversation-timestamp{
+    
+                }
+            }
+            
+
+            .conversation-preview{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 85%;
+            }
+
+            .conversation-message-badge{
+                
+            }
+        }
+    }
+}

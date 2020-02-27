@@ -1,0 +1,41 @@
+.chat-window-wrapper{
+    display: flex;
+    padding: 60px 30px;
+    .chat-header-container{
+        .user-information-container{
+            .client-name{
+                font-size: 26px;
+                padding-bottom: 10px;
+            }
+
+            .relationship-manager-name{
+                font-size: 18px;
+            }
+        }
+
+        .more-options-container{
+
+        }
+    }
+
+    .chat-conversation-container{
+        .chat-message-container{
+            .message-sender{
+
+            }
+
+            .message-time{
+
+            }
+
+            .message-content{
+                
+            }
+        }
+    }
+
+    .send-message-container{
+        flex-direction: column;
+        justify-self: flex-end;
+    }
+}
