@@ -11,11 +11,18 @@ import { LoginComponent } from './components/login/login.component';
 import { TransactionalbankerHomeComponent } from './containers/transactionalbanker-home/transactionalbanker-home.component';
 import { TransactionalBankerModule } from './modules/transactional-banker.module';
 
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { environment } from "../environments/environment";
+import { MainMenuComponent } from "./components/main-menu/main-menu.component";
+import { ChatContainerComponent } from "./components/chat-container/chat-container.component";
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TransactionalbankerHomeComponent
+    TransactionalbankerHomeComponent,
+    MainMenuComponent,
+    ChatContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +32,13 @@ import { TransactionalBankerModule } from './modules/transactional-banker.module
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    TransactionalBankerModule
+    TransactionalBankerModule,
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
