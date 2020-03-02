@@ -5,23 +5,25 @@
             <div class="relationship-manager-name">Relationship Manager</div>
         </div>
         <div class="more-options-container">
-            <img class="more-options-image" src=""/>
+            <span class="more-options-span">...</span>
         </div>
     </div>
     <div class="chat-conversation-container">
-      <div *ngFor="">
-            <div class="chat-message-container">
-                <div class="message-sender">
-
-                </div>
-                <div class="message-time">
-                    
+        <div class="chat-message-container" *ngFor="let conversationMessage of conversationMessages" [fxLayoutAlign]="conversationMessage.sentMessage === true ? 'flex-end' : 'flex-start'">
+            <div class="conversation-message">
+                <div class="message-details">
+                    <div class="message-sender">
+                        {{conversationMessage.messageSender}}
+                    </div>
+                    <div class="message-time">
+                        {{conversationMessage.messageTime}}
+                    </div>
                 </div>
                 <div class="message-content">
-                    
+                    {{conversationMessage.messageContent}}
                 </div>
             </div>
-      </div>
+        </div>
     </div>
     <div class="send-message-container">
         <form class="message-form">

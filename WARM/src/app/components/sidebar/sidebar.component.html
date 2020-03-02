@@ -4,30 +4,10 @@
         <div class="app-name">WARM</div>
     </div>
     <div class="user-actions-container">
-      <!-- <div *ngFor="let menu of menuActions">
-            <div class="user-action" ng-click="" matBadge="2" matBadgePosition="after">
-              <img class="action-logo" src="../../../assets/logo.png">
-              <div class="action-name">
-                  {{menu.label}}
-              </div>
-            </div>
-      </div> -->
-      <div class="user-action" ng-click="" matBadge="2" matBadgePosition="after">
+      <div class="user-action"  *ngFor="let menu of menuItems" ng-click="" matBadge="22" matBadgePosition="above">
         <img class="action-logo" src="../../../assets/logo.png">
         <div class="action-name">
-            Chat
-        </div>
-      </div>
-      <div class="user-action" ng-click="" matBadge="2" matBadgePosition="after">
-        <img class="action-logo" src="../../../assets/logo.png">
-        <div class="action-name">
-            Portfolios
-        </div>
-      </div>
-      <div class="user-action" ng-click="" matBadge="2" matBadgePosition="after">
-        <img class="action-logo" src="../../../assets/logo.png">
-        <div class="action-name">
-            Logout
+            {{menu.label}}
         </div>
       </div>
     </div>
