@@ -1,11 +1,11 @@
 <div class="transactional-banker-home-wrapper container-fluid">
-  <div class="sidebar-container col-xs-4">
-    <app-sidebar></app-sidebar>
-  </div>
-  <div class="conversation-bar-container col-xs-4">
-    <app-conversations-bar></app-conversations-bar>
-  </div>
-  <div class="chat-window-container col-xs-4">
-    <app-chat-window></app-chat-window>
-  </div>
+    <div class="sidebar-container">
+        <app-sidebar [menuItems]="menuActions"></app-sidebar>
+    </div>
+    <div class="conversation-bar-container col-xs-4">
+      <app-conversations-bar [activeConversations]="activeConversations"></app-conversations-bar>
+    </div>
+    <div class="chat-window-container col-xs-4">
+      <app-chat-window [conversationMessages]="conversationMessages"></app-chat-window>
+    </div>
 </div>

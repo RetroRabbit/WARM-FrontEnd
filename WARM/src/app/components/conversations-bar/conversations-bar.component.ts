@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-conversations-bar',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conversations-bar.component.scss']
 })
 export class ConversationsBarComponent implements OnInit {
+
+  @Input() activeConversations: any;
 
   constructor() { }
 

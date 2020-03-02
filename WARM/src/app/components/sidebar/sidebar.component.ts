@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,17 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  menuActions = [
-    {
-      'label': 'Chat'
-    },
-    {
-      'label': 'Portfolios'
-    },
-    {
-      'label': 'Logout'
-    }
-  ];
+  @Input() menuItems: any;
+
 
   constructor() { }
 
