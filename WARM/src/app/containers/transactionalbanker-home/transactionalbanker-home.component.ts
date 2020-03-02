@@ -1,27 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-transactionalbanker-home',
-  templateUrl: './transactionalbanker-home.component.html',
-  styleUrls: ['./transactionalbanker-home.component.scss']
+  selector: "app-transactionalbanker-home",
+  templateUrl: "./transactionalbanker-home.component.html",
+  styleUrls: ["./transactionalbanker-home.component.scss"]
 })
 export class TransactionalbankerHomeComponent implements OnInit {
-
   menuActions = [
     {
-      'label': 'Chat'
+      label: "Chat"
     },
     {
-      'label': 'Portfolios'
+      label: "Portfolios"
     },
     {
-      'label': 'Logout'
+      label: "Logout"
     }
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

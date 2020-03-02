@@ -1,34 +1,58 @@
-.login-wrapper{
+.login-wrapper {
+  text-align: center;
+  font-family: BentonSans;
 
-    .login-logo-container{
-        padding-top: 140px;
-        padding-bottom: 80px;
-        .login-logo{
-            width: 150px;
-            height: 150px;
-            border-radius:75px;
-        }
+  .login-logo-container {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    .login-logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
     }
-    
-    .application-name{
-        font-size: 36px;
+  }
+
+  .application-name {
+    width: 481px;
+    height: 27px;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  .login-form {
+    display: grid;
+
+    .input-field-container {
+      //width: 510px;
+      //height: 30px;
+      text-align: center;
+      font-size: 21px;
+      color: #858d9d;
     }
 
-    .login-form{
-        padding-top: 80px;
-        display: flex;
-        flex-direction: inherit;
-        width: 350px;
-
-        .input-field-container{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .login-button{
-            padding: 10px 25px;
-            width: fit-content;
-            align-self: center;
-        }
+    .login-button {
+      width: 280px;
+      height: 44px;
+      border-radius: 22px;
+      background-color: #0033a1;
     }
+  }
+
+  .mat-form-field-empty.mat-form-field-label {
+    color: #858d9d;
+  }
+  .mat-form-field-underline {
+    background-color: #858d9d;
+  }
+  .mat-form-field-label {
+    color: #858d9d;
+  }
+  .mat-form-field-appearance-legacy .mat-form-field-label {
+    color: #858d9d;
+  }
 }
