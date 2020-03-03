@@ -5,7 +5,10 @@
     <div class="conversation-bar-container col-xs-4">
       <app-conversations-bar [activeConversations]="activeConversations"></app-conversations-bar>
     </div>
-    <div class="chat-window-container col-xs-4">
+    <!-- <div class="chat-window-container col-xs-4">
       <app-chat-window [conversationMessages]="conversationMessages"></app-chat-window>
+    </div> -->
+    <div class="client-window-container col-xs-4">
+      <app-client-window [clientConversations]="clientConversations" client="clientInformation"></app-client-window>
     </div>
 </div>

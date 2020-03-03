@@ -1,0 +1,61 @@
+.client-window-wrapper{
+    .client-info-header-container{
+        padding: 60px 45px;
+
+        .client-image{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        .chat-participants-container{
+            display: inline-block;
+
+            .client-name{
+
+            }
+
+            .relationship-manager-name{
+
+            }
+        }
+    }
+
+    .client-details-container{
+        .client-detail{
+            display: inline-block;
+
+            .detail-item-name{
+
+            }
+
+            .detail-item-value{
+
+            }
+        }
+    }
+
+    .conversation-history-container{
+        .conversation-history-container-title{
+            
+        }
+
+        .previous-conversations-container{
+            .conversation-item{
+                .conversation-details{
+                    .conversation-date{
+
+                    }
+
+                    .conversation-preview{
+                        
+                    }
+                }
+
+                .view-conversation-button{
+
+                }
+            }
+        }
+    }
+}

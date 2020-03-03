@@ -58,6 +58,28 @@ export class TransactionalbankerHomeComponent implements OnInit {
     }
   ];
 
+  clientConversations = [
+    {
+      conversationDate: '2020-01-29T05:50:14.12355Z',
+      lastMessage: 'I need a very huge favour. Please help me.'
+    },
+    {
+      conversationDate: '2020-01-29T05:50:14.12355Z',
+      lastMessage: 'Yerrr what kind of favour do you need?'
+    },
+    {
+      conversationDate: '2020-01-29T05:50:14.12355Z',
+      lastMessage: 'It is a very a very bad one yo. My finances are a mess right now bro. You have to help me ASAP'
+    }
+  ];
+
+  clientInformation = {
+    accountNumber: '111111111',
+    idNumber: '65012436211088',
+    cellNumber: '0769854458',
+    emailAddress: 'email@Paddress.com'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
