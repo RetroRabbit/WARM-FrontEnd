@@ -17,17 +17,17 @@
       </mat-card-title>
     </div>
     <div class="col-xs-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
-      <form class="login-form">
+      <form class="login-form" [formGroup]="loginForm">
           <div class="input-fields-container">
             <mat-form-field appearance="standard" class="material-input">
               <mat-label>Username</mat-label>
-              <input matInput placeholder="Username" type="text" [formControl]="email" required />
-              <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+              <input matInput placeholder="Username" type="text" formControlName="email" required />
+              <mat-error *ngIf="loginForm.controls.email.invalid">{{getEmailErrorMessage()}}</mat-error>
             </mat-form-field>
             <mat-form-field appearance="standard" class="material-input">
               <mat-label>Confirm password</mat-label>
-              <input matInput placeholder="Password" type="password" [formControl]="password" required />
-              <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+              <input matInput placeholder="Password" type="password" formControlName="password" required />
+              <mat-error *ngIf="loginForm.controls.password.invalid">{{getPasswordErrorMessage()}}</mat-error>
             </mat-form-field>
           </div>
           <div class="login-button-container col-xs-12 col-md-8 col-lg-8 offset-md-2 offset-lg-2">
