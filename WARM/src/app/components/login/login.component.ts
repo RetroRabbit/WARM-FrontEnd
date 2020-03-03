@@ -1,16 +1,15 @@
 import { Component, OnInit } from "@angular/core";
 import { Http2ServerRequest } from 'http2';
-import {}
+
 
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",
   styleUrls: ["./login.component.scss"]
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
   constructor(public username?: string, private password?: string) {}
 
-  ngOnInit(): void {}
   get pass() {
     return this.password;
   }
@@ -19,8 +18,11 @@ export class LoginComponent implements OnInit {
     this.password = value;
   }
 
-  onClick() {
-    
+  onSubmit() {
+    if (!this.userLoginForm.valid) {
+      return;
+  }
+  
   }
 }
 
