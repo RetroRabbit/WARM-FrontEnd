@@ -1,14 +1,27 @@
-<div class="sidebar-wrapper" >
-    <div class="app-info-container">
-        <img class="app-logo" src="../../../assets/logo.png">
-        <div class="app-name">WARM</div>
-    </div>
-    <div class="user-actions-container">
-      <div class="user-action"  *ngFor="let menu of menuItems" ng-click="" matBadge="22" matBadgePosition="above">
+<div class="sidebar-wrapper row">
+  <div class="app-info-container">
+    <img class="app-logo" src="../../../assets/logo.png" />
+    <div class="app-name">WARM</div>
+  </div>
+
+  <div class="user-actions-container">
         <img class="action-logo" src="../../../assets/logo.png">
         <div class="action-name">
             {{menu.label}}
         </div>
       </div>
-    </div>
+      <div class="user-action" ng-click="" matBadge="2" matBadgePosition="after">
+        <img class="action-logo" src="../../../assets/logo.png">
+            Chat
+      </div>
+      <div class="user-action" ng-click="" matBadge="2" matBadgePosition="after">
+        <img class="action-logo" src="../../../assets/logo.png">
+            Portfolios
+      </div>
+      <div class="user-action" ng-click="" matBadge="2" matBadgePosition="after">
+        <img class="action-logo" src="../../../assets/logo.png">
+            Logout
+      </div>
+    </ul>
+  </div>
 </div>
