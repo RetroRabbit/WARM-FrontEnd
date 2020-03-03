@@ -1,11 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-html,
-body {
-  height: 100%;
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-form-field.mat-focused{
+    color:#0033a1;
+
+    .mat-form-field-ripple{
+        background-color:#0033a1;
+    }
+
+    .mat-form-field-label{
+        color:#0033a1;
+    }
+} 
+
+.mat-form-field-invalid {
+    color: #f44336;
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+
+

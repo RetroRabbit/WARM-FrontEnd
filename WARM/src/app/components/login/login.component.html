@@ -12,33 +12,27 @@
         />
       </div>
 
-      <mat-card-title class="application-name"
-        >WhatsApp for Relationship Managers</mat-card-title
-      >
+      <mat-card-title class="application-name">
+        WhatsApp for Relationship Managers
+      </mat-card-title>
     </div>
-    <form class="login-form col-xs-12 col-md-12 col-lg-12">
-      <div>
-        <div class="input-field-container">
-          <mat-form-field>
-            <mat-label>Username</mat-label>
-            <input matInput placeholder="Username" value="Username" />
-          </mat-form-field>
-        </div>
-        <div class="input-field-container">
-          <mat-form-field>
-            <mat-label>Password</mat-label>
-            <input matInput placeholder="Password" value="Password" />
-          </mat-form-field>
-        </div>
-        <div class="col-xs-12">
-          <button mat-flat-button class="login-button">SIGN IN</button>
-        </div>
-        <!-- <div class="col-xs-12">
-          <button type="button" class="btn btn-primary login-button">
-            SIGN IN
-          </button>
-        </div> -->
-      </div>
-    </form>
+    <div class="col-xs-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+      <form class="login-form">
+          <div class="input-fields-container">
+            <mat-form-field appearance="standard" class="material-input">
+              <mat-label>Username</mat-label>
+              <input matInput placeholder="Username" type="text" [formControl]="email" required />
+              <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="standard" class="material-input">
+              <mat-label>Confirm password</mat-label>
+              <input matInput placeholder="Password" type="password" [formControl]="password" required />
+              <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="login-button-container col-xs-12 col-md-8 col-lg-8 offset-md-2 offset-lg-2">
+            <button mat-flat-button class="login-button">SIGN IN</button>
+          </div>
+      </form>
   </div>
 </div>

@@ -1,10 +1,10 @@
 .login-wrapper {
   text-align: center;
-  font-family: BentonSans;
+  //font-family: BentonSans;
 
   .login-logo-container {
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     .login-logo {
       width: 150px;
       height: 150px;
@@ -13,46 +13,40 @@
   }
 
   .application-name {
-    width: 481px;
-    height: 27px;
     font-size: 28px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
   }
 
   .login-form {
-    display: grid;
 
-    .input-field-container {
-      //width: 510px;
-      //height: 30px;
+    input{
+      width: 100%;
+    }
+
+    .input-fields-container {
       text-align: center;
       font-size: 21px;
-      color: #858d9d;
+      padding-bottom: 40px;
+      padding-top: 76px;
+
+      .material-input{
+        width: 100%;
+      }
+
+      .mat-form-field-infix{
+        padding: .8em 0;
+      }
     }
 
-    .login-button {
-      width: 280px;
-      height: 44px;
-      border-radius: 22px;
-      background-color: #0033a1;
-    }
-  }
+    .login-button-container{
 
-  .mat-form-field-empty.mat-form-field-label {
-    color: #858d9d;
-  }
-  .mat-form-field-underline {
-    background-color: #858d9d;
-  }
-  .mat-form-field-label {
-    color: #858d9d;
-  }
-  .mat-form-field-appearance-legacy .mat-form-field-label {
-    color: #858d9d;
+      .login-button {
+        width: 100%;
+        height: 44px;
+        border-radius: 22px;
+        background-color: #0033a1;
+        color:#fff;
+      }
+    }
+    
   }
 }
