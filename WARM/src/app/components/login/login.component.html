@@ -17,7 +17,7 @@
       </mat-card-title>
     </div>
     <div class="col-xs-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
-      <form class="login-form" [formGroup]="loginForm">
+      <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div class="input-fields-container">
             <mat-form-field appearance="standard" class="material-input">
               <mat-label>Username</mat-label>
@@ -31,7 +31,7 @@
             </mat-form-field>
           </div>
           <div class="login-button-container col-xs-12 col-md-8 col-lg-8 offset-md-2 offset-lg-2">
-            <button mat-flat-button class="login-button">SIGN IN</button>
+            <button mat-flat-button class="login-button" type="submit"  [disabled]="!loginForm.valid">SIGN IN</button>
           </div>
       </form>
   </div>

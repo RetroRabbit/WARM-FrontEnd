@@ -34,4 +34,9 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit() {
+    // TODO: Make the call with the value
+    console.warn(this.loginForm.value);
+  }
+
 }
