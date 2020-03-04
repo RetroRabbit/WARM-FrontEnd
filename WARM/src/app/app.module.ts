@@ -20,7 +20,8 @@ import { MatFormFieldModule } from "@angular/material/form-field";
   declarations: [
     AppComponent,
     TransactionalbankerHomeComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
