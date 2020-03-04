@@ -1,0 +1,47 @@
+<div class="client-window-wrapper" >
+    <div class="client-info-header-container">
+        <div class="user-information-container">
+            <img class="client-image" src="../../../assets/logo.png">
+            <div class="chat-participants-container">
+                <div class="client-name">Client Name</div>
+                <div class="relationship-manager-name">Relationship Manager</div>
+            </div>
+        </div>
+        <div class="client-details-container">
+            <div class="client-detail">
+                <div class="detail-item-name">Current Account Number</div>
+                <div class="detail-item-value">{{client.accountNumber}}</div>
+            </div>
+            <div class="client-detail">
+                <div class="detail-item-name">ID Number</div>
+                <div class="detail-item-value">{{client.idNumber}}</div>
+            </div>
+            <div class="client-detail">
+                <div class="detail-item-name">Cell Number</div>
+                <div class="detail-item-value">{{client.cellNumber}}</div>
+            </div>
+            <div class="client-detail">
+                <div class="detail-item-name">Email Address</div>
+                <div class="detail-item-value">{{client.emailAddress}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="conversation-history-container">
+        <div class="conversation-history-container-title">Conversation history</div>
+        <div class="previous-conversations-container">
+            <div class="conversation-item"  *ngFor="let conversationMessage of clientConversations">
+                <div class="conversation-details">
+                    <div class="conversation-date">
+                        {{conversationMessage.conversationDate}}
+                    </div>
+                    <div class="conversation-preview">
+                        {{conversationMessage.lastMessage}}
+                    </div>
+                </div>
+                <div class="view-conversation-button">
+                    <button mat-stroked-button class="login-button">View conversation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
