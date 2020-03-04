@@ -14,11 +14,11 @@ import { TransactionalBankerModule } from "./modules/transactional-banker.module
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
 import { MainMenuComponent } from "./components/main-menu/main-menu.component";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     TransactionalbankerHomeComponent,
     MainMenuComponent
   ],
@@ -29,6 +29,7 @@ import { MainMenuComponent } from "./components/main-menu/main-menu.component";
     AngularMaterialModule,
     FlexLayoutModule,
     FormsModule,
+    MatFormFieldModule,
     ReactiveFormsModule,
     TransactionalBankerModule,
     ServiceWorkerModule.register("ngsw-worker.js", {
